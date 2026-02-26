@@ -5,6 +5,7 @@ public class GameStateManager : MonoBehaviour
     GameBaseState currentState;
     public AberturaGameState telaInicialState = new AberturaGameState();
     public CreditosGameState telaCreditosState = new CreditosGameState();
+    public JogoGameState jogoState = new JogoGameState();
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
