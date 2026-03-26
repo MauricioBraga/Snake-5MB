@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 189931881}
   - component: {fileID: 189931880}
   - component: {fileID: 189931883}
+  - component: {fileID: 189931884}
   m_Layer: 0
   m_Name: snake
   m_TagString: Untagged
@@ -285,6 +286,24 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.75, y: 0.75}
   m_EdgeRadius: 0
+--- !u!114 &189931884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189931879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cc809b0eb62a67489a6a8e1c3538f20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Snake
+  score: 0
+  direction: {x: 1, y: 0}
+  segments: []
+  segmentPreFab: {fileID: 0}
+  ativo: 0
+  gameState: {fileID: 0}
 --- !u!1 &247008636
 GameObject:
   m_ObjectHideFlags: 0
@@ -349,7 +368,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 62590ea07d7b5174e92d60ca57449ad9, type: 3}
   m_Color: {r: 0.7264151, g: 0.20901564, b: 0.20901564, a: 1}
@@ -440,7 +459,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 62590ea07d7b5174e92d60ca57449ad9, type: 3}
   m_Color: {r: 0.7264151, g: 0.20901564, b: 0.20901564, a: 1}
@@ -887,7 +906,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 62590ea07d7b5174e92d60ca57449ad9, type: 3}
   m_Color: {r: 0.7264151, g: 0.20901564, b: 0.20901564, a: 1}
@@ -1116,7 +1135,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 62590ea07d7b5174e92d60ca57449ad9, type: 3}
   m_Color: {r: 0.7264151, g: 0.20901564, b: 0.20901564, a: 1}
