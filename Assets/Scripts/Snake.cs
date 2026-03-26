@@ -12,7 +12,7 @@ public class Snake : MonoBehaviour   {
     public GameStateManager gameState;
 
     public void Start()        {
-         ativo = true; // remover essa linha depois.
+         // ativo = true; // remover essa linha depois.
         
         // Reseta a cobra para o tamanho inicial.
         // Faz isso limpando a lista, adicionando novamente a “cabeça”.       
@@ -69,6 +69,13 @@ public class Snake : MonoBehaviour   {
         int x = Mathf.RoundToInt(transform.position.x) + direction.x;
         int y = Mathf.RoundToInt(transform.position.y) + direction.y;
         transform.position = new Vector2(x, y);
+    }
+
+    public void ResetState()
+    {
+        direction = Vector2Int.right;
+        transform.position = Vector3.zero;
+        score = 0;
     }
 
 }
