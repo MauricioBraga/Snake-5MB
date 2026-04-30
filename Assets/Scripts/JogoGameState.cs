@@ -8,7 +8,7 @@ public class JogoGameState: GameBaseState
         gameState.AtivarElementosJogo(true);
         gameState.player.GetComponent<Snake>().ResetState();
         gameMusic = GameObject.Find("Tight_Turns");
-        gameMusic.GetComponentInParent<AudioSource>().Play();
+        // gameMusic.GetComponentInParent<AudioSource>().Play();
 
     }
     public override void updateState(GameStateManager gameState)  {
